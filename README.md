@@ -1,5 +1,5 @@
 # Sneaker Snippets
-Barebones Javascript snippets for people interesting in seeing the base code behind common sneaker-development practices. A very basic understanding of NodeJS/Javascript/Programming is required to understand some terminology I may be using. More descriptive information will be added in due time.
+Barebones Javascript snippets for people interesting in seeing the base code behind common sneaker-development practices. A very basic understanding of NodeJS/Javascript/Programming is required to understand some terminology and practises I may be using. More descriptive information will be added in due time.
 
 ### Contents
 
