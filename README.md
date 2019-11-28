@@ -6,6 +6,7 @@ Barebones Javascript snippets for people interesting in seeing the base code beh
 Contents are placed in order from most beginning friendly to the most advanced techniques.
 
 1) [My First Request](/snippets/requests) - A basic HTTP request to extract the page title from a website
+2) [My First Monitor](/snippets/requests) - A basic monitor using HTTP request to extract the page title from a website and look for a change.
 
 
 ### Terminology
