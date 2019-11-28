@@ -28,7 +28,7 @@ Status codes are numbers returned by a website to describe the type of action or
 * 407 - Tunnelling socket error, often shown when your program cannot connect to a proxy.
 * 500+ - Server errors
 
-Not receiving a status code is usually because something more internal has happened. If you try making a HTTP request without being connected to the internet you will see an example of this.
+Not receiving a status code is usually because something more internal has happened. If you try making a HTTP request without being connected to the internet you will see an example of this. theoretically a server could provide a valid response as an invalid status code to try and trick you, this is unlikely as it would also create a very difficult development experience.
 
 
 #### Request Methods
@@ -54,8 +54,6 @@ The most common types of request headers you will see used are:
 8) Cookie - Information stored on your browser being passed to the request.
 9) X-CSRF-token/X-CSRF - Used in protecting the request from being forged by other users through link misdirection. These are manually added headers because are prefixed with 'X-' and usually not sent by the browser, but by the server.
 10) `X-Requested-With: XMLHttpRequest` - Usually used when making an AJAX request by the browser.
-
-
 
 
 #### Content Types
