@@ -46,11 +46,11 @@ Headers are snippets of key:value information sent to the browser to determine v
 The most common types of headers you will see used are:
 1) User-Agent
 2) Accept-Language
-3) Accept-Encoding
+3) Accept-Encoding - Used to define what type of encoding a server is allowed to send to you. It usually used to make the page filesize smaller, potentially useful when using residential proxies with a limited amount of data. Most commonly `gzip`, `deflate` and `br`
 4) Host
 5) Cache-Control
-6) Pragma
-7) Referer
+6) Pragma - The older version of cache-control still used by some old website. Just set this to the same value as cache-control if you are using it.
+7) Referer - Usually the previous page URL.
 8) Cookie
 
 
