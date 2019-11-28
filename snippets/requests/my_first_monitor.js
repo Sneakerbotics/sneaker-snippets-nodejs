@@ -38,11 +38,10 @@ function findChange() {
         if (latest_title && latest_title != last_title) {
             if (!last_title) {
                 console.log("This is the first iteration. Finding what the title is.")
+            } else {
+                // We could do something cool in here like send a discord webhook or move onto the next stage of our bot
+                console.log(`The title of the webpage has changed, it's now: "${latest_title}"`)
             }
-            /**
-             * We could do something cool in here like send a discord webhook or move onto the next stage of our bot
-             */
-            console.log(`The title of the webpage has changed, it's now: "${latest_title}"`)
         } else if (last_title == latest_title) {
             console.log(`The title of the webpage is still the same. No change has been detected. it's still: "${latest_title}"`)
         } else {
