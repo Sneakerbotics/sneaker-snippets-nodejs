@@ -43,15 +43,18 @@ Request methods define the way you plan to send information to a website. There 
 
 Headers are snippets of key:value information sent to the browser to determine various types of information, most commonly which browser a user is using. The most well known anti-antibot technique is setting a user agent header for a version of a real browser such as: `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36`. Matching all the headers with a browser also increases the anonymity of your request, the user-agent header isn't the only way browsers can determine which browser you're using.
 
-The most common types of headers you will see used are:
-1) User-Agent
-2) Accept-Language
+The most common types of request headers you will see used are:
+1) User-Agent - A string consistenting of the browser/operating system and version.
+2) Accept-Language - The server can use this to automatically determine your language.
 3) Accept-Encoding - Used to define what type of encoding a server is allowed to send to you. It usually used to make the page filesize smaller, potentially useful when using residential proxies with a limited amount of data. Most commonly `gzip`, `deflate` and `br`
-4) Host
-5) Cache-Control
+4) Host - The host domain name. This can be used in some good security bypassing techniques.
+5) Cache-Control - This is used in determing the cache of the webpage. Usually we don't want to see cached bypasses because they show out-of-date information.
 6) Pragma - The older version of cache-control still used by some old website. Just set this to the same value as cache-control if you are using it.
 7) Referer - Usually the previous page URL.
-8) Cookie
+8) Cookie - Information stored on your browser being passed to the request.
+9) X-CSRF-token/X-CSRF - Used in protecting the request from being forged by other users through link misdirection. These are manually added headers because are prefixed with 'X-' and usually not sent by the browser, but by the server.
+10) `X-Requested-With: XMLHttpRequest` - Usually used when making an AJAX request by the browser.
+
 
 
 
