@@ -1,0 +1,25 @@
+{
+  "name": "sneaker-snippets",
+  "version": "1.0.0",
+  "description": "Barebones Javascript snippets for people interesting in seeing the base code behind common sneaker-development practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerconor/sneaker-snippets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developerconor/sneaker-snippets/issues"
+  },
+  "homepage": "https://github.com/developerconor/sneaker-snippets#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  }
+}
