@@ -50,8 +50,8 @@ The most common types of request headers you will see used are:
 3) Accept-Encoding - Used to define what type of encoding a server is allowed to send to you. It usually used to make the page filesize smaller, potentially useful when using residential proxies with a limited amount of data. Most commonly `gzip`, `deflate` and `br`
 4) Host - The host domain name. This can be used in some good security bypassing techniques.
 5) Cache-Control - This is used in determing the cache of the webpage. Usually we don't want to see cached bypasses because they show out-of-date information.
-6) Pragma - The older version of cache-control still used by some old website. Just set this to the same value as cache-control if you are using it.
-7) Referer - Usually the previous page URL.
+6) Pragma - The older version of cache-control still used by some old websites. Just set this to the same value as cache-control if you are using it.
+7) Referer - Usually the previous page URL. (Purposely spelt wrong)
 8) Cookie - Information stored on your browser being passed to the request.
 9) X-CSRF-token/X-CSRF - Used in protecting the request from being forged by other users through link misdirection. These are manually added headers because are prefixed with 'X-' and usually not sent by the browser, but by the server.
 10) `X-Requested-With: XMLHttpRequest` - Usually used when making an AJAX request by the browser.
