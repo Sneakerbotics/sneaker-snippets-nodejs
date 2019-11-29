@@ -18,6 +18,7 @@ Many readers may not be familiar with some of the terminology. Here is a guide f
 3) [Headers](#headers)
 4) [Content Types](#content-types)
 5) [Cookies](#cookies)
+6) [Programmable Browsers](#requests-vs-programmable-browsers)
 
 
 #### Status Codes
@@ -95,3 +96,12 @@ Cookies are essential for state-management when creating a bot or monitor. Cooki
 Not using or incorrect usage of cookies may result in repeating errors. An example of an error would be adding an item to your cart and then not being able to see it in your basket when you visit the checkout page.
 
 I recommend using the [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg?hl=en) extension to view and edit your cookies in the browser easily; This is an excellent tool for testing cookie issues.
+
+
+#### Programmable Browsers
+
+Programmable browsers such as [Selenium](https://selenium.dev/) or [Puppeteer](https://github.com/puppeteer/puppeteer) are the go-to for new developers; they're effortless to get started with and can often bypass many security systems when configured correctly without having to do any intense programming or searching for a solution/bypass. Programmable browsers can run Javascript; this means that antibot companies such as Akamai and PerimeterX (which use browser-fingerprinting through Javascript as one of their methods to determine if a real user or a bot) is automatically handled for you.
+
+The issue with programmable browsers in comparison to requests they're incredibly CPU and resource-intensive. The extra resource intensity means on the same computer you may only be able to run 5 puppeteer tasks but run 200 request tasks. Usually, there are more external resources to download which a pure request-based does not have. (Image downloads and Javascript files) making it more data consuming when using data-limited proxies.
+
+It's important you make the choice which is better to use in your project. You may be critiqued for using programmable browsers over HTTP requests as it's seen as less "professional" but it's scenario dependant.
