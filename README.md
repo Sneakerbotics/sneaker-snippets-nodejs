@@ -18,7 +18,7 @@ Many readers may not be familiar with some of the terminology. Here is a guide f
 3) [Headers](#headers)
 4) [Content Types](#content-types)
 5) [Cookies](#cookies)
-6) [Programmable Browsers](#requests-vs-programmable-browsers)
+6) [Programmable Browsers](#programmable-browsers)
 
 
 #### Status Codes
