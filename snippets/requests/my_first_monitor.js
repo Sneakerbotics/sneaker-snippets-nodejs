@@ -23,7 +23,7 @@ async function check() {
         const title = $("title").text()
         return title
     }).catch(error => {
-        console.log(`Error! We received a bad resposne code or what could be a more serious error (No internet, bad proxy etc)`)
+        console.log(`Error! We received a bad response code or what could be a more serious error (No internet, bad proxy etc)`)
         console.log(`Error message: ${error.message}`)
         return
     })
