@@ -62,7 +62,7 @@ The most common types of request headers you will see used are:
 
 > Before it was patched. Solebox had a queue bypass that let you access a product behind a queue by turning off redirects. You could then quickly check out this product as they had no fallback security.
 
-```
+```php
 # Solebox example code (PHP)
 if ($userHasNotCompletedQueue) {
  # Redirect the user to the queue URL.
