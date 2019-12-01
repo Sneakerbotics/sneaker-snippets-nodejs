@@ -53,7 +53,13 @@ async function sendWebhook(product) {
         .setColor('#ff0000')
         .setFooter('NodeJS Snippets by Sneakerbotics', 'https://placehold.it/50x50')
 
-    const webhook = new Discord.WebhookClient()
+    /**
+     * https://discordapp.com/api/webhooks/650671953140555555/lT4e4qNtVi5l6g2jiliAj8lFfUK4a0aLNkMV3xrAH8MKNMxrHU05-ztoBkiMZDAxxxxx
+     * 650671953140555555
+     * lT4e4qNtVi5l6g2jiliAj8lFfUK4a0aLNkMV3xrAH8MKNMxrHU05-ztoBkiMZDAxxxxx
+     */
+    const webhook = new Discord.WebhookClient('650671953140555555', 'lT4e4qNtVi5l6g2jiliAj8lFfUK4a0aLNkMV3xrAH8MKNMxrHU05-ztoBkiMZDAxxxxx')
+    webhook.send(embed)
 
 }
 
