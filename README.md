@@ -7,6 +7,7 @@ The code snippets are placed in order from most beginning friendly to the most a
 
 1) [My First Request](/snippets/requests) - A basic HTTP request to extract the page title from a website
 2) [My First Monitor](/snippets/requests) - A basic monitor using HTTP request to extract the page title from a website and look for a change.
+3) [My First Webhook](/snippets/requests) - A basic Discord webhook being sent using Discord.js
 
 
 ### Terminology
