@@ -110,14 +110,14 @@ It's important you make the choice which is better to use in your project. You m
 
 #### Cache
 
-Cache is incredibly important concept to understand; especially when making monitors. Have you ever been to a webpage and saw sizes, but when you try to add one to your cart it says it is out of stock? That's cache. Cache will show an older, less updated version of the webpage to make results and loading times faster since it can store the data in memory rather than having to query a database (which is **much** faster). We want to try and avoid cache as much as possible and there's many ways to do this.
+Cache is an incredibly important concept to understand; especially when making monitors. Have you ever been to a webpage and saw sizes, but when you try to add one to your cart it says it is out of stock? That's cache. Cache will show an older, less updated version of the webpage to make results and loading times faster since it can store the data in memory rather than having to query a database (which is **much** faster). We want to try and avoid cache as much as possible, and there are many ways to do this.
 
 How do you check if you're bypassing cache or not? Check the response headers when you make a request. Common returned values for missed-cache are `Cache-Control: max-age=600` and `Cache: MISS`. If you have hit a cached page usually headers will look something more like `Cache-Control: max-age=429` (Meaning the page is 171 seconds old normally) or `Cache: HIT`.
 
-###### How to avoid cache on some websites
+##### How to avoid cache on some websites
 
 All websites are different, trying to avoid cache is usually a long trial-and-error process and will be different for most websites. Certain websites may not use any caching. If your monitor is unusually late, it's usually because you're looking at a cached webpage.
 
-1) The most common way to avoid cache is by randomising a query parameter at the end of the URL. An example would be turning `https://dash.sneakerbotics.com/` into `https://dash.sneakerbotics.com/?_=RANDOM`.
+1) The most common way to avoid cache is by randomizing a query parameter at the end of the URL. An example would be turning `https://dash.sneakerbotics.com/` into `https://dash.sneakerbotics.com/?_=RANDOM`.
 2) Setting your own `Cache-Control: no-cache` and `Pragma: no-cache` can avoid being returned a cached page on a website.
-3) Randomizing certain headers such as `Accept` may result in non-cached results.
+3) Randomizing specific headers such as `Accept` may result in non-cached results.
