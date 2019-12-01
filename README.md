@@ -20,6 +20,7 @@ Many readers may not be familiar with some of the terminology. Here is a guide f
 5) [Cookies](#cookies)
 6) [Programmable Browsers](#programmable-browsers)
 7) [Cache](#cache)
+8) [Proxies](#proxies)
 
 
 #### Status Codes
@@ -121,3 +122,23 @@ All websites are different, trying to avoid cache is usually a long trial-and-er
 1) The most common way to avoid cache is by randomizing a query parameter at the end of the URL. An example would be turning `https://dash.sneakerbotics.com/` into `https://dash.sneakerbotics.com/?_=RANDOM`.
 2) Setting your own `Cache-Control: no-cache` and `Pragma: no-cache` can avoid being returned a cached page on a website.
 3) Randomizing specific headers such as `Accept` may result in non-cached results.
+
+
+#### Proxies
+
+Proxies are used to help make your request more anonymous and reduce ban rates. Proxies are an essential part of monitoring and botting and often considered the worse part because they can cost significant amounts of money. There are two types of proxies. Residential and Datacenter proxies.
+
+
+##### Residential proxies
+
+Residential proxies are usually botnets meaning when you use one, it will be forwarded through another person's computer without them even knowing. Although immoral, they're great for hiding your identity when connecting to a website since the IPs are randomised and often do not share subnets (Improving anonymity). Residential proxies are usually slower since they have to be forwarded through another person's connection and can range from a few hundred milliseconds to several seconds per request. Residential proxies are usually priced per GB with ranges commonly between $5 and $20 a GB depending on the quality of the proxies.
+
+
+##### Datacenter proxies
+
+Datacenter proxies are proxies that are forwarded through datacenters, common datacenter are [AWS](https://aws.amazon.com/), [Google Cloud](https://cloud.google.com/), [Azure](https://azure.microsoft.com/en-gb/), [DigitalOcean](https://www.digitalocean.com/) and [Vultr](https://www.vultr.com/). Many of these providers have been banned on most websites by default now because they use commonly seen subnets and IP addresses. Datacenter proxies are extremely fast because they're hosted in datacenters which have little ping and server-sized download speeds, taking as little as 50ms with some providers. Datacenter proxies often share very similar subnets making them more easily detectable. A website may completely ban a subnet after detecting abuse, this can't be done as easily with residential proxies.
+
+
+##### How to choose?
+
+Proxy type depends entirely on the budget, the website (banning rates, etc.), and the speed required for your monitors. The ideal choice will involve valuing consistency over speed. Certain websites may only restock between working-time and allow you to turn off/increase the delay of the monitors overnight; saving data and helping avoid rate-limiting.
