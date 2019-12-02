@@ -31,6 +31,7 @@ Status codes are numbers returned by a website to describe the type of action or
 * 200 - The response has been successful
 * 3XX - The response is redirecting you to another webpage; usually, 3XX response codes have no content in them and just a `location` header of the page you are about to be redirected to.
 * 401 - Unauthorized. You are not authorized to access the page.
+* 403 - Access denied, usually this means you've been banned or restricted on a website.
 * 404 - This page cannot be found
 * 407 - Tunnelling socket error, often shown when your program cannot connect to a proxy.
 * 5XX - Server errors
